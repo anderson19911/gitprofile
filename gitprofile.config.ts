@@ -1,6 +1,6 @@
 const CONFIG = {
   github: {
-    username: 'anderson19911', // .
+    username: 'anderson19911', // Votre nom d'utilisateur GitHub corrigé
   },
   base: '/',
   projects: {
@@ -9,15 +9,15 @@ const CONFIG = {
       header: 'Projets GitHub',
       mode: 'automatic',
       automatic: {
-        sortBy: 'stars',
-        limit: 8,
+        sortBy: 'stars', // Trier les projets par "stars" ou "updated"
+        limit: 8, // Nombre de projets affichés
         exclude: {
-          forks: false,
-          projects: [],
+          forks: false, // Afficher les forks si nécessaire
+          projects: [], // Exclure des projets spécifiques si besoin
         },
       },
       manual: {
-        projects: ['kouassi-anderson/project1', 'kouassi-anderson/project2'], // Remplacez par vos projets GitHub.
+        projects: [], // Si vous avez des projets spécifiques à afficher, remplacez cette ligne.
       },
     },
     external: {
@@ -29,13 +29,13 @@ const CONFIG = {
             'Projet de collecte, nettoyage et extraction de données à partir de diverses sources web.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          link: 'https://example.com', // Remplacez par un lien vers votre projet si applicable
         },
       ],
     },
   },
   seo: {
-    title: 'Portfolio de Kouassi Anderson Ehoussou',
+    title: 'Portfolio de Anderson Archimede',
     description: 'Data Analyst | SQL | R | Python | Power BI | DataViz | Machine Learning | Expert Support Applicatif Data',
     imageURL: '',
   },
@@ -59,11 +59,10 @@ const CONFIG = {
     telegram: '',
     website: '',
     phone: '+33 745303145',
-    email: 'andersonkouassi1991@gmail.com',
+    email: 'humanitasbusiness@etik.com',
   },
   resume: {
-    fileUrl:
-      'https://example.com/cv-anderson-kouassi.pdf', // Remplacez par un lien vers votre CV.
+    fileUrl: 'https://example.com/cv-anderson-kouassi.pdf', // Remplacez par un lien vers votre CV
   },
   skills: [
     'Python',
@@ -202,4 +201,10 @@ const CONFIG = {
   enablePWA: true,
 };
 
-export default CONFIG;
+// Configuration de déploiement GitHub Pages
+export default {
+  siteUrl: "https://anderson19911.github.io/powerBi", // URL de votre site GitHub Pages
+  repo: "powerBi", // Nom de votre dépôt GitHub
+  branch: "main", // Branche principale
+  publishDir: "dist", // Dossier contenant les fichiers à déployer
+};
