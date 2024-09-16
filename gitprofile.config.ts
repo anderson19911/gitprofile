@@ -1,6 +1,6 @@
 const CONFIG = {
   github: {
-    username: 'anderson19911', // .
+    username: 'anderson19911', 
   },
   base: '/',
   projects: {
