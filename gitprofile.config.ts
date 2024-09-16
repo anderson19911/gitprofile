@@ -1,49 +1,32 @@
-// gitprofile.config.ts
-
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'anderson19911', // .
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
-  base: '/gitprofile/',
+  base: '/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      display: true,
+      header: 'Projets GitHub',
+      mode: 'automatic',
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        sortBy: 'stars',
+        limit: 8,
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: false,
+          projects: [],
         },
       },
       manual: {
-        // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['kouassi-anderson/project1', 'kouassi-anderson/project2'], // Remplacez par vos projets GitHub.
       },
     },
     external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
+      header: 'Mes Projets',
       projects: [
         {
-          title: 'Project Name',
+          title: 'Projet Data Scraping',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Projet de collecte, nettoyage et extraction de données à partir de diverses sources web.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://example.com',
@@ -52,176 +35,154 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
-    description: '',
+    title: 'Portfolio de Kouassi Anderson Ehoussou',
+    description: 'Data Analyst | SQL | R | Python | Power BI | DataViz | Machine Learning | Expert Support Applicatif Data',
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'kouassi-anderson-ehoussou',
+    twitter: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
     instagram: '',
     reddit: '',
     threads: '',
-    youtube: '', // example: 'pewdiepie'
+    youtube: '',
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
+    medium: '',
+    dev: '',
+    stackoverflow: '',
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
+    website: '',
+    phone: '+33 745303145',
+    email: 'andersonkouassi1991@gmail.com',
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://example.com/cv-anderson-kouassi.pdf', // Remplacez par un lien vers votre CV.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
+    'Python',
+    'DAX',
+    'Power BI',
+    'SQL',
+    'NoSQL',
+    'Tableau',
+    'R',
+    'Jira',
     'Git',
-    'Docker',
-    'PHPUnit',
+    'Machine Learning',
+    'HTML',
     'CSS',
-    'Antd',
-    'Tailwind',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Veo Worldwide Services',
+      position: 'Ingénieur Support Applicatif Data',
+      from: 'Septembre 2021',
+      to: 'Décembre 2023',
+      companyLink: 'https://veoworldwide.com',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Veo Worldwide Services',
+      position: 'Assistant Product Owner',
+      from: 'Janvier 2022',
+      to: 'Décembre 2023',
+      companyLink: 'https://veoworldwide.com',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'Certification Google Analytics',
+      body: 'Google Analytics',
+      year: '2023',
+      link: 'https://skillshop.credential.net/5adc6cab-fe6d-4d05-922d-239645ea9446',
+    },
+    {
+      name: 'Data Visualisation avec R',
+      body: 'Credly',
+      year: '2023',
+      link: 'https://www.credly.com/badges/670e5343-75f5-4314-b8c3-c912fb131ca2/linked_in_profile',
+    },
+    {
+      name: 'Introduction au CRM avec HubSpot',
+      body: 'Coursera',
+      year: '2023',
+      link: 'https://coursera.org/share/90716c3aec9da73ff8dc2f2466f5070d',
+    },
+    {
+      name: 'Python pour la Data Science',
+      body: 'Credly',
+      year: '2023',
+      link: 'https://www.credly.com/badges/df380edc-d79a-4b6c-9fa3-c573a73319e9/linked_in_profile',
+    },
+    {
+      name: 'Dataiku Core Designer',
+      body: 'Dataiku',
+      year: '2023',
+      link: 'https://verify.skilljar.com/c/igq9pfsjqpy5',
+    },
+    {
+      name: 'Dataiku ML Practitioner',
+      body: 'Dataiku',
+      year: '2023',
+      link: 'https://verify.skilljar.com/c/4544b4gkdb37',
+    },
+    {
+      name: 'Dataiku Advanced Designer',
+      body: 'Dataiku',
+      year: 'Mai 2024',
+      link: 'https://verify.skilljar.com/c/x3ayna2yfhqi',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'HETIC',
+      degree: 'Mastère Data & IA',
+      from: '2024',
+      to: '2025',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'ESLSCA Business School',
+      degree: 'MBA Data Science',
+      from: '2023',
+      to: '2024',
+    },
+    {
+      institution: 'Université Polytechnique de Bucarest',
+      degree: 'Licence Informatique et Technologie de l’Information',
+      from: '2018',
+      to: '2022',
     },
   ],
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-  ],
-  // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
+    source: '', // Laissez vide si vous ne souhaitez pas afficher de blog.
+    username: '',
+    limit: 3,
   },
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: '', // Ajoutez votre ID Google Analytics.
   },
-  // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {
     id: '',
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
-
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
+    defaultTheme: 'nord',
     disableSwitch: false,
-
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: false,
-
-    // Display the ring in Profile picture
     displayAvatarRing: true,
-
-    // Available themes. To remove any theme, exclude from here.
     themes: [
       'light',
       'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'dim',
       'nord',
-      'sunset',
-      'procyon',
+      'corporate',
+      'business',
     ],
-
-    // Custom theme, applied to `procyon` theme
     customTheme: {
       primary: '#fc055b',
       secondary: '#219aaf',
@@ -232,13 +193,11 @@ const CONFIG = {
       '--rounded-btn': '3rem',
     },
   },
-
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
+  footer: `Fait avec <a 
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+    >GitProfile</a> et ❤️`,
 
   enablePWA: true,
 };
